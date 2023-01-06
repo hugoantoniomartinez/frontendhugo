@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>trabajador</ion-title>
+    <a href="../../home/"><ion-icon name="arrow-back"></ion-icon></a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item *ngFor="let trabajador of Trabajador">
+      <ion-label>
+      <p>{{trabajador.nombre}}</p>
+      <p>{{trabajador.apellido}}</p>
+      <p>{{trabajador.cargo}}</p>
+      <p>{{trabajador.edad}}</p>
+      <p>{{trabajador.telefono}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

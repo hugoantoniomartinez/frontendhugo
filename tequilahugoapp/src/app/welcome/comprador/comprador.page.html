@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>comprador</ion-title>
+    <a href="../../home/"><ion-icon name="arrow-back"></ion-icon></a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item *ngFor="let comprador of Comprador">
+      <ion-label>
+      <p>{{comprador.nombre}}</p>
+      <p>{{comprador.apellido}}</p>
+      <p>{{comprador.telefono}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>venta</ion-title>
+    <a href="../../home/"><ion-icon name="arrow-back"></ion-icon></a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+      <ion-item *ngFor="let venta of Venta">
+        <ion-label>
+        <p>{{venta.fecha}}</p>
+        <p>{{venta.cantidad}}</p>
+        <p>{{venta.total}}</p>
+        <p>{{venta.cantidad}}</p>
+        <p>{{venta.numeroventa}}</p>
+        <p>{{venta.id_trabajador}}</p>
+        <p>{{venta.id_producto}}</p>
+        <p>{{venta.id_comprador}}</p>
+      </ion-label>
+      </ion-item>
+
+  </ion-card>
+
+</ion-content>

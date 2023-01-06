@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CATALOGO</ion-title>
+    <a href="../../home/"><ion-icon name="arrow-back"></ion-icon></a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="../../assets/IMG/teq2.jpg" routerLink="../producto"></ion-img>
+  <ion-img src="../../assets/IMG/teq5.jpg" routerLink="../producto"></ion-img>
+  <br>
+  <p>El tequila verdaderamente excelente es algo que vale la pena buscar, saborear y celebrar.
+    En Tequila Hugo te traemos tequila de fincas familiares en Jalisco, usando solo ingredientes de la más alta
+    calidad. Creemos que Tequila Hugo sabe mejor cuando puedes disfrutar de una bebida con tus seres queridos,
+    así que salud: este es el lugar al que llamas hogar.</p>
+  <ion-card>
+    <ion-item *ngFor="let catalogo of Catalogo">
+      <ion-label>
+      <p>{{catalogo.stock}}</p>
+      <p>{{catalogo.disponible}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>B U Y  N O W</ion-title>
+  </ion-toolbar>
+</ion-footer>
